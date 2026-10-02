@@ -1,0 +1,21 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #33251d; }
+header, footer { padding: 15px 8%; background: #5b3928; color: white; display: flex; justify-content: space-between; align-items: center; }
+header h2 { margin: 0; }
+header a, footer a { color: white; }
+section { padding: 35px 8%; }
+.hero, .about { display: flex; align-items: center; gap: 30px; background: #f1e4d2; }
+.hero > *, .about > * { width: 50%; }
+.hero img, .about img { height: 260px; object-fit: cover; }
+.cards { display: flex; gap: 15px; }
+.cards article { flex: 1; border: 1px solid #aaa; padding: 10px; }
+.cards img { width: 100%; height: 140px; object-fit: cover; }
+a:hover { color: #d87536; }
+footer p { margin: 0; }
+
+@media (max-width: 600px) {
+  header, footer { flex-direction: column; gap: 10px; text-align: center; }
+  .hero, .about, .cards { flex-direction: column; }
+  .hero > *, .about > * { width: 100%; }
+  .cards article { width: calc(100% - 22px); }
+  section { padding: 25px 7%; }
+}
